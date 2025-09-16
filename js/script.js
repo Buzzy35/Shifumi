@@ -8,7 +8,7 @@ const choix = ["Pierre", "Feuille", "Ciseaux"];
 const score = {win: 0, draw: 0, lose: 0};
 
 function update() {
-    winDisplay.textContent = score["win"] > 1 ? score["win"] +  " victoires" : score["win"] + " victoire";
+    winDisplay.textContent = score["win"] > 1 ? score["win"] + " victoires" : score["win"] + " victoire";
     drawDisplay.textContent = score["draw"] > 1 ? score["draw"] + " égalités" : score["draw"] + " égalité";
     loseDisplay.textContent = score["lose"] > 1 ? score["lose"] + " défaites" : score["lose"] + " défaite";
 }
@@ -38,7 +38,16 @@ buttons.forEach(button => {
         score.win = 0;
         score.draw = 0;
         score.lose = 0;
-        update();
+        winDisplay.classList.add("roll-out-left")
+        drawDisplay.classList.add("roll-out-left")
+        loseDisplay.classList.add("roll-out-left")
+        setTimeout(() => {
+            update();
+            winDisplay.classList.remove("roll-out-left")
+            drawDisplay.classList.remove("roll-out-left")
+            loseDisplay.classList.remove("roll-out-left")
+        }, 1000);
+
     })
 })
 
