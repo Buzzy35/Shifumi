@@ -81,7 +81,7 @@ document.addEventListener("keydown", function (event) {
         const choixRobot = choix[Math.floor(Math.random() * 3)];
         score["win"]++;
         update()
-        resultatDisplay.textContent = "Vous avez jouer le Puits contre " + choixRobot + " et vous avez tricher et gangner";
+        resultatDisplay.textContent = "Vous avez jouer le Puits contre " + choixRobot + " et vous avez tricher et gagner";
         resultatDisplay.classList.add("scale-up-center")
         setTimeout(() => {
             resultatDisplay.classList.remove("scale-up-center")
