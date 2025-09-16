@@ -58,6 +58,7 @@ buttons.forEach(button => {
         winDisplay.classList.add("roll-out-left")
         drawDisplay.classList.add("roll-out-left")
         loseDisplay.classList.add("roll-out-left")
+        resultatDisplay.textContent = "";
         setTimeout(() => {
             update();
             winDisplay.classList.remove("roll-out-left")
