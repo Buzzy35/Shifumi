@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background: -webkit-linear-gradient(#aeeeec, #94BBE9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game {
+    width: 60%;
+    height: 10cm;
+    text-align: center;
+    margin: auto;
+    background: #aeeeec;
+    background: radial-gradient(circle, rgba(174, 238, 236, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.game-btn {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    margin: 10px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0;
+    text-indent: -9999px;
+}
+
+.pierre {
+    background-image: url("../img/pierre.png");
+}
+
+.feuille {
+    background-image: url("../img/feuille.png");
+}
+
+.ciseaux {
+    background-image: url("../img/ciseaux.png");
+}
+
+.resultat {
+    text-align: center;
+    font-size: 30px;
+}
+
+.resultat button {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
